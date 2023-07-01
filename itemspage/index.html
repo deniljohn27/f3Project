@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navLeft">MeShop</div>
+            <div class="navRight">
+                <div class="navRightItems">Home</div>
+                <div class="navRightItems">Login</div>
+                <div class="navRightItems">Signup</div>
+                <div class="navRightItems">My Cart</div>
+                <div class="navRightItems">Profile</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="filters">
+            <div class="filter">
+                <p>Colors</p>
+                <div ><input type="checkbox" class="filterLabel" value="red" id="red"><span>Red</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="blue" id="blue"><span>Blue</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="green" id="green"><span>Green</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="black" id="black"><span>Black</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="white" id="white"><span>White</span></div>
+
+            </div>
+            <div class="filter">
+                <p>Size</p>
+                <div ><input type="checkbox" class="filterLabel" value="s" id="s"><span>S</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="m" id="m"><span>M</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="l" id="l"><span>L</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="xl" id="xl"><span>XL</span></div>
+
+            </div>
+            <div class="filter rating">
+                <p>Rating</p>
+                    <input type="range" value="" id="rating" min="0" max="5">
+            </div>
+            <div class="filter">
+                <p>Price Range</p>
+                <div ><input type="checkbox" class="filterLabel" value="25" id="r1"><span>$0 to $25</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="50" id="r2"><span>$25 to $50</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="100" id="r3"><span>$50 to $100</span></div>
+                <div ><input type="checkbox" class="filterLabel" value="100" id="r4"><span>$100 onwards</span></div>
+            </div>
+            <button id="applyFilter">Apply FIlter</button>
+        </div>
+        <div class="items">
+            <input type="text" id="search" placeholder="Search">
+            <div class="categories">
+                <div class="categoryItems">All</div>
+                <div class="categoryItems">Mens</div>
+                <div class="categoryItems">Womens</div>
+                <div class="categoryItems">Jewellery</div>
+                <div class="categoryItems">Electronics</div>
+            </div>
+            <div id="mens">
+                <p class="categoryName">Men's Clothing</p>
+                <div id="mensDisplay" class="cContainer">
+                    <!-- <div class="card">
+                        <div class="imgDetails">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                            <div class="details">
+                                <p class="title">Shirts Polo</p>
+                                <div class="priceSize">
+                                    <p class="price">$100</p>
+                                    <p class="size">S,M,L</p>
+                                </div>
+                                <p class="colors">Colors : </p>
+                                <p class="sRatings">Rating : </p>
+                            </div>
+                        </div>
+                        <div class="addToCart">Add To Cart</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                        <div class="details">
+                            <p class="title">Shirts Polo</p>
+                            <div class="priceSize">
+                                <p class="price">$100</p>
+                                <p class="size">S,M,L</p>
+                            </div>
+                            <p class="colors">Colors : </p>
+                            <p class="sRatings">Rating : </p>
+                        </div>
+                        <div id="addToCart">Add To Cart</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                        <div class="details">
+                            <p class="title">Shirts Polo</p>
+                            <div class="priceSize">
+                                <p class="price">$100</p>
+                                <p class="size">S,M,L</p>
+                            </div>
+                            <p class="colors">Colors : </p>
+                            <p class="sRatings">Rating : </p>
+                        </div>
+                        <div id="addToCart">Add To Cart</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                        <div class="details">
+                            <p class="title">Shirts Polo</p>
+                            <div class="priceSize">
+                                <p class="price">$100</p>
+                                <p class="size">S,M,L</p>
+                            </div>
+                            <p class="colors">Colors : </p>
+                            <p class="sRatings">Rating : </p>
+                        </div>
+                        <div id="addToCart">Add To Cart</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                        <div class="details">
+                            <p class="title">Shirts Polo</p>
+                            <div class="priceSize">
+                                <p class="price">$100</p>
+                                <p class="size">S,M,L</p>
+                            </div>
+                            <p class="colors">Colors : </p>
+                            <p class="sRatings">Rating : </p>
+                        </div>
+                        <div id="addToCart">Add To Cart</div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="womens">
+                <p class="categoryName">Women's Clothing</p>
+                <div id="womensDisplay">
+
+                </div>
+            </div>
+            <div id="jewellery">
+                <p class="categoryName">Jewellery</p>
+                <div id="jewelleryDisplay">
+
+                </div>
+            </div>
+            <div id="electronics">
+                <p class="categoryName">Electronics</p>
+                <div id="electronicsDisplay">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

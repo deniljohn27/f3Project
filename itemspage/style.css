@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    background-color: black;
+    color: white;
+    /* border:2px green solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px ;
+}
+.navRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;  
+}
+.filters input{
+    height:20px;
+
+}
+.filters{
+    border: 2px black solid;
+    width:10vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+.filter{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-top: 1px white solid;
+    /* height: 16vh; */
+    padding:6px;
+
+}
+.rating{
+    height: 6vh; 
+}
+#applyFilter{
+    margin:6px 0;
+    height:30px;
+    color:white;
+    background-color: black;
+    border:solid 1px white;
+}
+.filter>div{
+    width: 90%;
+    border:solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.filter>p{
+    margin-bottom: 10px;
+}
+main{
+    display: flex;
+}
+.items{
+    padding:10px 20px;
+    font-size: 18px;
+    border:2px solid red;
+    width:100%;
+    height: 100vh;
+    overflow-y:scroll;
+}
+.items input{
+    width: 100%;
+    height:45px;
+    font-size: 18px;
+    border:2px solid black;
+
+}
+.categories{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+}
+.categoryItems{
+    border:2px solid black;
+    width:150px;
+    height: 25px;
+    padding: 10px 15px;
+    text-align: center;
+}
+#mensDisplay,#womensDisplay,#jewelleryDisplay,#electronicsDisplay{
+    border: 2px solid green;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 0px 50px;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+.card{
+    border:2px solid black;
+    max-width:260px;
+    min-width:260px;
+    height:450px;
+    font-size: 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.card>.imgDetails>img{
+    /* height:20px; */
+        max-width: 100%;
+        max-height: 70%;
+        display: block;
+}
+.details{
+    padding:10px ;
+}
+.details>.title{
+    font-size: 20px;
+    font-weight: 500;
+    margin:5px 0;
+}
+.imgDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height:80%;
+}
+.priceSize{
+    display: flex;
+    justify-content: space-between;
+    margin:5px 0;
+}
+.addToCart{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    height:40px;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 5px;
+}
+.categoryName{
+    font-size: 25px;
+    font-weight: 600;
+    margin:10px 0;
+}
+#mens,#womens,#jewellery,#electronics{
+    margin:35px 0;
+}
