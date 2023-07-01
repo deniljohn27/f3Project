@@ -31,7 +31,9 @@ function categoriseData(rData){
         if(ele.category==="women's clothing"){womens.push(ele);}
         if(ele.category==="jewelery"){jewel.push(ele);}
         if(ele.category==="electronics"){elect.push(ele);}
-    })
+    });
+    displayAllData(mens,womens,jewel,elect);
+    
 }
 
 let mContainer=document.getElementById("mensDisplay");
@@ -243,7 +245,7 @@ let checkedValue=[];
 let filterBtn=document.getElementById("applyFilter");
 
 filterBtn.addEventListener("click",()=>{
-    console.log("HI");
+    changeToWhite(categories);
     checkedValue=[];
     for(let i=0;i<=8;i++){
         if(filters[i].checked== true){      
@@ -301,3 +303,9 @@ filterBtn.addEventListener("click",()=>{
 
 });
 
+let myCart=document.getElementById("cart");
+myCart.addEventListener("click",()=>{
+    localStorage.setItem("cart",JSON.stringify(cart));
+    sessionStorage.setItem("cart",JSON.stringify(cart));
+    window.location.href="../cart/index.html";
+});
