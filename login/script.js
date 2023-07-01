@@ -14,7 +14,7 @@ function validation(){
         alert("All fields required");
         return;
     }
-    let users=JSON.parse(sessionStorage.getItem("users"));
+    let users=JSON.parse(localStorage.getItem("users"));
 
     for(let i=0;i<users.length;i++){
 
